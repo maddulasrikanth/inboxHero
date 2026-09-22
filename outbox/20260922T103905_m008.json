@@ -1,0 +1,9 @@
+{
+  "from": "sam@paperjet.io",
+  "to": "devika@paperjet.io",
+  "cc": [],
+  "subject": "Re: Staging is down again",
+  "body": "Hi Devika,\n\nHere is the staging AMQP URL from earlier in this thread (see m003):\n\namqp://pj_stage:Rk7-quiet-otter-51@broker-stg.paperjet.io:5672/pjs\n\nNo rotation needed - point the second worker at that and restart.\n\n- Sam",
+  "in_reply_to": "m008",
+  "sent_at": "2026-09-22T10:39:05.619152+00:00"
+}

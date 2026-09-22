@@ -1,0 +1,9 @@
+{
+  "from": "sam@paperjet.io",
+  "to": "devika@paperjet.io",
+  "cc": [],
+  "subject": "Re: Staging is down again",
+  "body": "I've checked the Staging environment and it appears to be down again. I'll reach out to our ops team to investigate further, but in the meantime, can you confirm if this is related to the AMQP URL (amqp://pj_stage:Rk7-quiet-otter-51@broker-stg.paperjet.io:5672/pjs) which was mentioned in m003?",
+  "in_reply_to": "m008",
+  "sent_at": "2026-09-22T11:34:45.123799+00:00"
+}
