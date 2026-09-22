@@ -1,0 +1,21 @@
+{
+  "preferences": [
+    {
+      "key": "cc_priya_on_legal",
+      "rule": "Always CC priya@paperjet.io on mail from hartwellcho.com",
+      "source_message_id": "m015",
+      "details": {
+        "cc": "priya@paperjet.io",
+        "domain": "hartwellcho.com"
+      }
+    },
+    {
+      "key": "no_meetings_before_11",
+      "rule": "Never accept meetings before 11:00am; offer 11:00am or later",
+      "source_message_id": "m041",
+      "details": {
+        "earliest_hour": 11
+      }
+    }
+  ]
+}

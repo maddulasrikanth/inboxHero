@@ -1,0 +1,1002 @@
+[
+  {
+    "message_id": "m096",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m072",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m001",
+    "disposition": "archive",
+    "reason": "Issue raised; later messages show resolved",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m003",
+    "disposition": "archive",
+    "reason": "Sam already answered with new AMQP URL",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m112",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m005",
+    "disposition": "archive",
+    "reason": "Confirmation that fix worked",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m088",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m064",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m104",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m080",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m044",
+    "disposition": "defer",
+    "reason": "Outbound follow-up waiting on recipient; track for chase",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m097",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m073",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m113",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m089",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m065",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m008",
+    "disposition": "reply",
+    "reason": "Needs grounded resend of staging AMQP URL from earlier thread message",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_grounded_creds_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m105",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m081",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m041",
+    "disposition": "archive",
+    "reason": "Owner standing calendar preference recorded to prefs.json",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m098",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m074",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m015",
+    "disposition": "archive",
+    "reason": "Standing legal-CC preference from Priya recorded to prefs.json",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m114",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m090",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m066",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m106",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m082",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m026",
+    "disposition": "archive",
+    "reason": "Launch thread coordination FYI",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m027",
+    "disposition": "archive",
+    "reason": "Launch thread update; no direct ask for Sam",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m028",
+    "disposition": "archive",
+    "reason": "Launch thread update; no direct ask for Sam",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m099",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m075",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m029",
+    "disposition": "archive",
+    "reason": "Launch thread update; no direct ask for Sam",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m030",
+    "disposition": "reply",
+    "reason": "Buried ask: approve pricing copy by the 12th",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "approve_pricing_copy",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m033",
+    "disposition": "archive",
+    "reason": "Launch thread update; no direct ask for Sam",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m115",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m091",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m067",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m107",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m083",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m108",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m084",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m034",
+    "disposition": "archive",
+    "reason": "Launch thread update; no direct ask for Sam",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m100",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m076",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m038",
+    "disposition": "defer",
+    "reason": "Board commitment - extract deadline, do not auto-reply",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "complete_board_prep",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m116",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m092",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m068",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m051",
+    "disposition": "reply",
+    "reason": "Scheduling / social commitment of time; draft for approval",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_schedule_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m109",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m085",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m010",
+    "disposition": "reply",
+    "reason": "Investor scheduling; draft for human approval before send",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_investor_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m101",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m077",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m040",
+    "disposition": "defer",
+    "reason": "Board commitment - extract deadline, do not auto-reply",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "complete_board_prep",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m057",
+    "disposition": "archive",
+    "reason": "FYI-only status/system notice, no reply needed",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m117",
+    "disposition": "archive",
+    "reason": "FYI-only status/system notice, no reply needed",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m069",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m093",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m035",
+    "disposition": "archive",
+    "reason": "Launch thread update; no direct ask for Sam",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m017",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m024",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m049",
+    "disposition": "archive",
+    "reason": "FYI-only status/system notice, no reply needed",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m061",
+    "disposition": "reply",
+    "reason": "Scheduling / social commitment of time; draft for approval",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_schedule_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m086",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m062",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m110",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m036",
+    "disposition": "archive",
+    "reason": "Launch thread coordination FYI",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m042",
+    "disposition": "escalate",
+    "reason": "Hiring decision with candidate deadline; owner must decide",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "hiring_decision",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m078",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m102",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m021",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m013",
+    "disposition": "reply",
+    "reason": "Scheduling / social commitment of time; draft for approval",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_schedule_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m118",
+    "disposition": "archive",
+    "reason": "FYI-only status/system notice, no reply needed",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m070",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m045",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m094",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m059",
+    "disposition": "archive",
+    "reason": "PTO heads-up; note coverage, no reply required",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m012",
+    "disposition": "escalate",
+    "reason": "Ambiguous ('the thing'); ask owner rather than guess",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "clarify_with_owner",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m039",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m053",
+    "disposition": "archive",
+    "reason": "FYI-only status/system notice, no reply needed",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m087",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m063",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m023",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m111",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m018",
+    "disposition": "reply",
+    "reason": "Legal mail; draft reply and CC Priya if preference set",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_legal_ack",
+    "preference_applied": "cc_priya_on_legal"
+  },
+  {
+    "message_id": "m016",
+    "disposition": "reply",
+    "reason": "Scheduling / social commitment of time; draft for approval",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_schedule_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m046",
+    "disposition": "reply",
+    "reason": "Press request about launch; draft needs human tone check before send",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_press_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m019",
+    "disposition": "reply",
+    "reason": "Scheduling / social commitment of time; draft for approval",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_schedule_reply",
+    "preference_applied": null
+  },
+  {
+    "message_id": "m043",
+    "disposition": "reply",
+    "reason": "Proposed 9:00am conflicts with no-meetings-before-11 preference; draft decline/reschedule",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_reschedule_reply",
+    "preference_applied": "no_meetings_before_11"
+  },
+  {
+    "message_id": "m103",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m079",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m048",
+    "disposition": "reply",
+    "reason": "Legal mail; draft reply and CC Priya if preference set",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_legal_ack",
+    "preference_applied": "cc_priya_on_legal"
+  },
+  {
+    "message_id": "m047",
+    "disposition": "flag",
+    "reason": "Hostile or phishing content; refused action, left in place",
+    "rule_handled": true,
+    "needs_human": true,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m055",
+    "disposition": "reply",
+    "reason": "Legal mail; draft reply and CC Priya if preference set",
+    "rule_handled": false,
+    "needs_human": true,
+    "pending": true,
+    "pending_action": "send_legal_ack",
+    "preference_applied": "cc_priya_on_legal"
+  },
+  {
+    "message_id": "m119",
+    "disposition": "archive",
+    "reason": "FYI-only status/system notice, no reply needed",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m095",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  },
+  {
+    "message_id": "m071",
+    "disposition": "archive",
+    "reason": "automated noise thread (receipt/newsletter/alert)",
+    "rule_handled": true,
+    "needs_human": false,
+    "pending": false,
+    "pending_action": null,
+    "preference_applied": null
+  }
+]

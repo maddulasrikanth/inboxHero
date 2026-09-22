@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "inboxHero": {
+      "command": "python",
+      "args": ["-m", "mcp_server"],
+      "cwd": ".",
+      "env": {
+        "USE_LLM": "0",
+        "DRY_RUN": "1"
+      }
+    }
+  }
+}
