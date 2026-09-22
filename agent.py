@@ -63,7 +63,18 @@ def run_agent(
     transcript: list[dict[str, Any]] = []
 
     for step in range(max_steps):
-        assistant = llm.chat(messages, tools=tools)
+        try:
+            assistant = llm.chat(messages, tools=tools)
+        except llm.LLMError as e:
+            trace.log("agent_tool_error", cap=cap, error=str(e))
+            return {
+                "ok": False,
+                "error": str(e),
+                "hint": "Try a model with stronger tool-calling support, or set USE_LLM=0 to use the offline rules path.",
+                "model": config.MODEL_NAME,
+                "provider": config.MODEL_PROVIDER,
+                "transcript": transcript,
+            }
         messages.append(assistant)
         tool_calls = assistant.get("tool_calls") or []
 

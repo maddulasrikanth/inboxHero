@@ -131,70 +131,110 @@ def _chat_ollama(
     max_tokens: int,
 ) -> dict[str, Any]:
     url = config.OLLAMA_BASE_URL.rstrip("/") + "/api/chat"
-    payload: dict[str, Any] = {
+    base_payload: dict[str, Any] = {
         "model": config.MODEL_NAME,
         "messages": messages,
         "stream": False,
         "options": {"temperature": temperature, "num_predict": max_tokens},
     }
-    if tools:
-        payload["tools"] = tools
 
-    data = json.dumps(payload).encode("utf-8")
+    payload_variants: list[dict[str, Any]] = [dict(base_payload)]
+    if tools:
+        tool_payload = dict(base_payload)
+        tool_payload["tools"] = tools
+        payload_variants.insert(0, tool_payload)
+
     last_err: Exception | None = None
     for attempt in range(config.LLM_MAX_RETRIES):
-        time.sleep(config.LLM_MIN_INTERVAL_SEC)
-        req = urllib.request.Request(
-            url,
-            data=data,
-            headers={"Content-Type": "application/json"},
-            method="POST",
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=120) as resp:
-                body = json.loads(resp.read().decode("utf-8"))
-            msg = body.get("message") or {}
-            # Normalize tool_calls to OpenAI shape if present
-            tool_calls = msg.get("tool_calls")
-            out: dict[str, Any] = {
-                "role": "assistant",
-                "content": msg.get("content") or "",
-            }
-            if tool_calls:
-                normalized = []
-                for i, tc in enumerate(tool_calls):
-                    fn = tc.get("function") or tc
-                    args = fn.get("arguments", {})
-                    if isinstance(args, dict):
-                        args = json.dumps(args)
-                    normalized.append(
-                        {
-                            "id": tc.get("id") or f"call_{i}",
-                            "type": "function",
-                            "function": {
-                                "name": fn.get("name"),
-                                "arguments": args,
-                            },
-                        }
-                    )
-                out["tool_calls"] = normalized
-            trace.log(
-                "llm_call",
-                provider="ollama",
-                model=config.MODEL_NAME,
-                has_tools=bool(tools),
-                tool_calls=len(out.get("tool_calls") or []),
+        for payload_index, payload in enumerate(payload_variants):
+            time.sleep(config.LLM_MIN_INTERVAL_SEC)
+            data = json.dumps(payload).encode("utf-8")
+            timeout = config.OLLAMA_TOOL_TIMEOUT_SEC if payload.get("tools") else config.OLLAMA_TIMEOUT_SEC
+            req = urllib.request.Request(
+                url,
+                data=data,
+                headers={"Content-Type": "application/json"},
+                method="POST",
             )
-            return out
-        except urllib.error.HTTPError as e:
-            last_err = e
-            if e.code == 429:
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as resp:
+                    body = json.loads(resp.read().decode("utf-8"))
+                msg = body.get("message") or {}
+                tool_calls = msg.get("tool_calls")
+                out: dict[str, Any] = {
+                    "role": "assistant",
+                    "content": msg.get("content") or "",
+                }
+                if tool_calls:
+                    normalized = []
+                    for i, tc in enumerate(tool_calls):
+                        fn = tc.get("function") or tc
+                        args = fn.get("arguments", {})
+                        if isinstance(args, dict):
+                            args = json.dumps(args)
+                        normalized.append(
+                            {
+                                "id": tc.get("id") or f"call_{i}",
+                                "type": "function",
+                                "function": {
+                                    "name": fn.get("name"),
+                                    "arguments": args,
+                                },
+                            }
+                        )
+                    out["tool_calls"] = normalized
+                trace.log(
+                    "llm_call",
+                    provider="ollama",
+                    model=config.MODEL_NAME,
+                    has_tools=bool(payload.get("tools")),
+                    tool_calls=len(out.get("tool_calls") or []),
+                )
+                return out
+            except urllib.error.HTTPError as e:
+                last_err = e
+                if e.code == 429:
+                    _sleep_backoff(attempt)
+                    continue
+                if payload_index == 0 and payload.get("tools"):
+                    trace.log(
+                        "llm_fallback",
+                        provider="ollama",
+                        model=config.MODEL_NAME,
+                        reason="tool_schema_rejected",
+                    )
+                    continue
+                raise LLMError(f"Ollama HTTP {e.code}") from e
+            except (TimeoutError, OSError, urllib.error.URLError) as e:
+                last_err = e
+                if payload_index == 0 and payload.get("tools"):
+                    trace.log(
+                        "llm_fallback",
+                        provider="ollama",
+                        model=config.MODEL_NAME,
+                        reason="tool_call_timeout",
+                    )
+                    continue
                 _sleep_backoff(attempt)
-                continue
-            raise LLMError(f"Ollama HTTP {e.code}") from e
-        except Exception as e:  # noqa: BLE001
-            last_err = e
-            _sleep_backoff(attempt)
+            except Exception as e:  # noqa: BLE001
+                last_err = e
+                if payload_index == 0 and payload.get("tools"):
+                    trace.log(
+                        "llm_fallback",
+                        provider="ollama",
+                        model=config.MODEL_NAME,
+                        reason="tool_call_exception",
+                    )
+                    continue
+                _sleep_backoff(attempt)
+
+        if tools and payload_variants and payload_variants[0].get("tools"):
+            # If the tool-enabled request fails, fall back to plain chat for this model.
+            payload_variants = [dict(base_payload)]
+            continue
+
+        break
+
     raise LLMError(f"Ollama failed after retries: {last_err}")
 
 

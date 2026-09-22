@@ -37,6 +37,8 @@ USE_LLM = os.getenv("USE_LLM", "0") == "1" and MODEL_PROVIDER not in {"none", ""
 LLM_MIN_INTERVAL_SEC = float(os.getenv("LLM_MIN_INTERVAL_SEC", "2"))
 LLM_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "5"))
 LLM_MAX_AGENT_STEPS = int(os.getenv("LLM_MAX_AGENT_STEPS", "12"))
+OLLAMA_TIMEOUT_SEC = float(os.getenv("OLLAMA_TIMEOUT_SEC", "180"))
+OLLAMA_TOOL_TIMEOUT_SEC = float(os.getenv("OLLAMA_TOOL_TIMEOUT_SEC", "300"))
 
 # Dry-run / approval defaults
 DEFAULT_DRY_RUN = os.getenv("DRY_RUN", "1") == "1"
